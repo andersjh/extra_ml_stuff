@@ -13,4 +13,4 @@ You can ignore all warnings
 # Additional Resources
 
 ## Best First Machine Learning Book
-[https://www.amazon.com/Deep-Learning-Illustrated-Intelligence-Addison-Wesley/dp/0135116694/ref=sr_1_3?crid=3UGJPI8ALYL27&dchild=1&keywords=deep+learning+illustrated+a+visual%2C+interactive+guide&qid=1600970570&sprefix=deep+learning+illu%2Caps%2C278&sr=8-3](Deep Learning Illustrated)
+(https://www.amazon.com/Deep-Learning-Illustrated-Intelligence-Addison-Wesley/dp/0135116694/ref=sr_1_3?crid=3UGJPI8ALYL27&dchild=1&keywords=deep+learning+illustrated+a+visual%2C+interactive+guide&qid=1600970570&sprefix=deep+learning+illu%2Caps%2C278&sr=8-3)[Deep Learning Illustrated]
