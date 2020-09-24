@@ -1,0 +1,10 @@
+ipykernel
+pandas
+sklearn
+xgboost
+lightgbm
+tqdm
+tpot
+flask
+wheel
+
