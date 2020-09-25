@@ -1,7 +1,9 @@
 # Additional ML Examples
 Additional ML Content
 
+## Project 3 mini example ( machine learning and flask )
 The 00 folder shows the process from start to finish
+[Recording of 00 folder overview](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6405d9a0-cd5a-49fd-8401-ac41003a6d5d)
 
 The other folders are just the detail that is used to create the 00 folder
 

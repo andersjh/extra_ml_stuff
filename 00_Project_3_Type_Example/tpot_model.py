@@ -1,8 +1,9 @@
 import numpy as np
 import pandas as pd
-from sklearn.ensemble import ExtraTreesClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.feature_selection import SelectPercentile, f_classif
 from sklearn.model_selection import train_test_split
-from sklearn.naive_bayes import GaussianNB
+from sklearn.naive_bayes import GaussianNB, MultinomialNB
 from sklearn.pipeline import make_pipeline, make_union
 from tpot.builtins import StackingEstimator
 
@@ -12,9 +13,11 @@ features = tpot_data.drop('target', axis=1)
 training_features, testing_features, training_target, testing_target = \
             train_test_split(features, tpot_data['target'], random_state=None)
 
-# Average CV score on the training set was: 0.5234813982374165
+# Average CV score on the training set was: 0.5245645871452324
 exported_pipeline = make_pipeline(
-    StackingEstimator(estimator=ExtraTreesClassifier(bootstrap=True, criterion="gini", max_features=0.55, min_samples_leaf=13, min_samples_split=10, n_estimators=100)),
+    StackingEstimator(estimator=MultinomialNB(alpha=10.0, fit_prior=True)),
+    StackingEstimator(estimator=RandomForestClassifier(bootstrap=True, criterion="entropy", max_features=0.5, min_samples_leaf=12, min_samples_split=2, n_estimators=100)),
+    SelectPercentile(score_func=f_classif, percentile=74),
     GaussianNB()
 )
 
