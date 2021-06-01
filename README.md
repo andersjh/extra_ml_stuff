@@ -10,6 +10,11 @@ The other folders are just the detail that is used to create the 00 folder
 
 Please note the requirements.txt file to create the proper virtual environment.
 
+```
+conda create -n mlextra python=3.6
+pip install -r requirements.txt
+```
+
 You can ignore all warnings
 
 # Additional Resources
@@ -19,3 +24,8 @@ You can ignore all warnings
 
 ## Most Popular Machine Learning Book ( great second choice )
 [Hands On Machine Learning](https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1492032646/ref=pd_bxgy_img_2/146-3028129-9830702?_encoding=UTF8&pd_rd_i=1492032646&pd_rd_r=87a8de4d-2857-43ce-a3a0-24c8e0b98da7&pd_rd_w=Uo07K&pd_rd_wg=eWwYg&pf_rd_p=ce6c479b-ef53-49a6-845b-bbbf35c28dd3&pf_rd_r=71700ZA0Z786YN6STHN4&psc=1&refRID=71700ZA0Z786YN6STHN4)
+
+## AutoML TPOT Links
+[TPOT Home](http://epistasislab.github.io/tpot/)
+
+[Machine Learning Masterey TPOT Walkthrough](https://machinelearningmastery.com/tpot-for-automated-machine-learning-in-python/)
