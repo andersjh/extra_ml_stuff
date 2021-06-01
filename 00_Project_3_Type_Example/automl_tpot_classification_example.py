@@ -31,3 +31,5 @@ print(f'Acc: {accuracy_score(y_test, y_hat_test)}')
 
 # export model into python code
 tpot_clf.export('tpot_model.py')
+# note how the score is same as F1 calc above
+print(f'Tpot score (same as F1 above in this case): {tpot_clf.score(X_test, y_test)}')
