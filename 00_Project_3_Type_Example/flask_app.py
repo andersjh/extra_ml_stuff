@@ -7,7 +7,7 @@ import pickle
 # Create an instance of Flask
 app = Flask(__name__)
 
-with open(f'best_xgb_model.pickle', "rb") as f:
+with open('best_xgb_model.pickle', "rb") as f:
     model = pickle.load(f)
 
 feature_names = model.get_booster().feature_names
